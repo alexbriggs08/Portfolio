@@ -112,18 +112,51 @@ section h2 {
   border-radius: 4px;
   border: 1px solid var(--border-light);
   transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
 }
 
 #projects li:hover {
   border-color: var(--text-light);
 }
 
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #projects li strong {
   color: var(--text-dark);
   font-weight: 500;
-  display: block;
-  margin-bottom: 4px;
   font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.github-btn {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.github-btn:hover {
+  border-color: var(--pastel-mint);
+  background: var(--pastel-mint);
+  color: var(--text-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact section */
